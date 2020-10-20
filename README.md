@@ -3,12 +3,14 @@
 
 ## Slides
 
-<a href="https://docs.google.com/presentation/d/1wqqVCFCJOE8EemlfVUrBJZewh_lhm2F0cqn_p-eKBwc/edit?usp=sharing"><img src="./img/codigo.png" alt="Slides del taller Escribir Máquinas que Escriben"/></a>
+<a href="https://docs.google.com/presentation/d/1wqqVCFCJOE8EemlfVUrBJZewh_lhm2F0cqn_p-eKBwc/edit?usp=sharing">
+<img src="./img/codigo.png" alt="Slides del taller Escribir Máquinas que Escriben"/>
+</a>
 
 
 ## Ejemplos
 
-<https://arterobotico.com/blog/>
+(https://arterobotico.com/blog/)
 
 
 ## Autores
