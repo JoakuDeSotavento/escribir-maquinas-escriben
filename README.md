@@ -1,5 +1,5 @@
 # Escribir-Maquinas-Escriben
- En este repositorio se ecuentrán los ejercicios del taller de literatura interactiva.
+ En este repositorio se encuentran los ejercicios del taller de literatura interactiva.
 
 ## Slides
 
@@ -9,9 +9,9 @@
 
 ## Materiales del concurso
 
-Aquí puedes encontrar el temario y las prácticas del taller
-
-<https://github.com/JoakuDeSotavento/escribir-maquinas-escriben/tree/master/materiales%20del%20curso>
+<a href="https://github.com/JoakuDeSotavento/escribir-maquinas-escriben/tree/master/materiales%20del%20curso">
+<img src="./img/codigo.png" alt="Aquí puedes encontrar el temario y las prácticas del taller"/>
+</a>
 
 ## Libros
 
