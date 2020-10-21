@@ -7,6 +7,17 @@
 <img src="./img/codigo.png" alt="Slides del taller Escribir Máquinas que Escriben"/>
 </a>
 
+## Materiales del concurso
+
+Aquí puedes encontrar el temario y las prácticas del taller
+
+<https://github.com/JoakuDeSotavento/escribir-maquinas-escriben/tree/master/materiales%20del%20curso>
+
+## Libros
+
+Esta es una selección de los mejores libros para estos menesteres
+
+--------  drive.google.com/file/d/1EdUHApmi8gDPhFTLEqCSNj-p55fkkJvF/view?usp=sharing -------------
 
 ## Ejemplos
 
