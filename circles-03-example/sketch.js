@@ -20,6 +20,6 @@ function draw() {
 
   let vol = mic.getLevel();
 
-  fill(number);
+  fill(number+vol*100);
   ellipse(mouseX + random(-1, 1)*vol*100, mouseY + random(-1, 1)*vol*100, number, number);
 }
