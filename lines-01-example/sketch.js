@@ -1,4 +1,5 @@
-let myLines = []; 
+let myLines = [];
+
 let totalLines = 150;
 
 function setup() {
@@ -8,11 +9,16 @@ function setup() {
   } 
 }
 
+
+
 function draw() {
   background(255);
-  for (let i = 0; i < totalLines; i++) {
+  
+    for (let i = 0; i < totalLines; i+=10) {
   	myLines[i].display();
   }
+    
+    //myLines[40].display();
 }
 
 class Line{

@@ -23,22 +23,21 @@ function setup() {
     
     textFont("Roboto");
     stroke(255);
-    strokeWeight(10);
-    textFont("Roboto");
+    strokeWeight(2);
 }
 
 
 function draw() {
-    background(102);
+    background(102, 50);
         
     textSize(32);
-    text("En un lugar de la Mancha, de cuyo nombre no quiero acordarme...", x1, y1, 200, 400);
+    text("En un lugar de la Mancha, de cuyo nombre no quiero acordarme...", x1, y1, mouseX, mouseY);
     //text("En un lugar de la Mancha, de cuyo nombre no quiero acordarme...", x1, y1, 200, 400);
     textSize(20);
     text(texto, 27, 90);
     
     text(mouseX, x2, y2);
-    //text(hour() + " : " + minute() + " : " + second() + " : " + millis(), x3, y3);
+    text(hour() + " : " + minute() + " : " + second() + " : " + millis(), x3+10, y3);
     
     x1++;
     y1++;
