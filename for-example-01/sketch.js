@@ -10,37 +10,38 @@
 /*
 
 function setup() {
-    createCanvas(480, 120);
+    createCanvas(800, 600);
     strokeWeight(2);
 }
 function draw() {
     background(204);
-    for (var i = 20; i < 400; i += 8) {
-        line(i, 40, i + 60, 80);
+    for (var i = 20; i < 800; i ++ ) {
+        line(i, 100, i + 60, 80);
     }
 }
-*/
 
+*/
 
 //ejemplo 2 for
 /*
 function setup() {
-    createCanvas(480, 120);
+    createCanvas(800, 600);
     strokeWeight(2);
 }
 function draw() {
     background(204);
-    for (var i = 20; i < 400; i += 20) {
+    for (var i = 20; i < 600; i += 20) {
+        /////x1, y1, x2, y2
         line(i, 0, i + i/2, 80);
     }
 }
 */
 
 // ejemplo 3 if anidado
-
 /*
+
 function setup() {
-    createCanvas(480, 120);
+    createCanvas(800, 600);
     strokeWeight(2);
 }
 
@@ -51,10 +52,10 @@ function draw() {
         line(i + i/2, 80, i*1.2, 120);
     }
 }
-*/
 
+*/
 // ejemplo 4 punch! de for 
-/*
+
 var num = 200;
 var x = [];
 var y = [];
@@ -82,4 +83,3 @@ function draw() {
         ellipse(x[i], y[i], 40, 40);
     }
 }
-*/

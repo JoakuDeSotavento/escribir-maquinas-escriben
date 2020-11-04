@@ -1,13 +1,13 @@
 // Ejemplos tomados del libro Getting Started with p5js
 
-//comenta uno a uno los siguientes bloques de texto.
+// comenta uno a uno los siguientes bloques de texto.
 
-//evita descomentar mas de uno a la vez
+// evita descomentar mas de uno a la vez
 
 
 //ejemplo 1 de if
 
-/*
+
 function setup() {
     createCanvas(240, 120);
     strokeWeight(30);
@@ -21,7 +21,7 @@ function draw() {
     }
     line(0, 70, width, 50);
 }
-*/
+
 
 //ejemplo 2 if-else
 /*
