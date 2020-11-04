@@ -32,7 +32,9 @@ function setup() {
 }
 
 function draw() {
-	for(var i = 0; i < total; i++){
+    image(img, 0, 0);
+	/*
+    for(var i = 0; i < total; i++){
 		var circle = circles[i]
 		circle.angle += 1/circle.radius*circle.dir
 
@@ -49,4 +51,5 @@ function draw() {
 		circle.prevPos.x = circle.pos.x
 		circle.prevPos.y = circle.pos.y
 	}
+    */
 }
