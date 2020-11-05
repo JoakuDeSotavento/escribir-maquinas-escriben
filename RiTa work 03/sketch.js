@@ -1,37 +1,57 @@
-let input;
-let button;
+let mensaje;
+let rMess;
+let rPos;
+let rWords;
 let lexicon;
+let mensajeGen;
+
+
 
 function setup(){
-    noCanvas();
-    //createCanvas(800, 600);
-    lexicon = new RiLexicon();
-    input = createInput("Espect poison from standing water.");
-    button = createButton("Envia");
-    input.changed(processRita);
-    button.mousePressed(processRita);
-    input.size(300);
+    
+    createCanvas(800, 600);
+    mensaje = "Expect poison from standing water";
+    rMess = new RiString(mensaje);
+    rPos = rMess.pos();
+    rWords = rMess.words();
+    supMess = " ";
+    lexicon = new RiLexicon;
+    mensajeGen = " ";    
 }
 
-function processRita(){
-    let s = input.value();
-    let rs = new RiString(s);
-    let rWords = rs.words();
-    let rPos = rs.pos();
+function draw(){
+    background(125);
     
-    console.log(rWords);
-    console.log(rPos);
+    drawText();
     
-    let output = " ";
+
+
+}
+
+function poesiaGenerativa(){
+    
+    let supMess = " ";
+    
     for(let i = 0; i < rWords.length; i++){
-        
         if(rPos[i] === "nn"){
-            output += lexicon.randomWord("nn", 6);
+            supMess += lexicon.randomWord("nn", 5);
         }else{
-            output += rWords[i];   
+            supMess += rWords[i];
         }
-            output += " ";
+        supMess += " ";
     }
-    createP(output);
     
+    return supMess;
+}
+
+function mousePressed(){
+    console.log("funcion generativa activada");
+    mensajeGen = poesiaGenerativa();
+}
+
+function drawText(){
+    push();
+    stroke();
+    text(mensajeGen, mouseX, mouseY); 
+    pop();
 }
