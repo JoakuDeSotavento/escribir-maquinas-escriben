@@ -51,7 +51,8 @@ function mousePressed(){
 
 function drawText(){
     push();
-    stroke();
+    stroke(125, 10, 125);
+    fill(125, 50, 125);
     text(mensajeGen, mouseX, mouseY); 
     pop();
 }
