@@ -5,7 +5,7 @@ function setup() {
   // especifica múltples formatos para distintos navegadores
     fingers = createVideo("sonic.mp4");
     //fingers.loop();
-    //fingers.hide();
+    fingers.hide();
  
   noStroke();
   fill(0);
@@ -27,5 +27,5 @@ function draw() {
 
 function mousePressed(){
     fingers.loop();
-    fingers.hide();
+    //fingers.hide();
 }
