@@ -3,18 +3,18 @@ let mySound;
 
 function preload() {
 	img = loadImage('est.jpg');
-    
     soundFormats('mp3', 'ogg');
     mySound = loadSound('tc-free');
 }
 
 function setup() {
-	createCanvas(img.width, img.height);
+	createCanvas(windowWidth, windowHeight);
 	background(0);
 }
 
 function draw() {
-    image(img, 0, 0);
+    image(img, 0, 0, windowWidth, windowHeight);
+    
     /*if(mouseIsPressed){
         mySound.play();
     }else{
@@ -29,4 +29,8 @@ function mousePressed() {
 
 function doubleClicked() {
     mySound.stop();
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }

@@ -3,7 +3,7 @@ var lines, markov, data1, data2, x = 160, y = 240;
 function preload() {
 
   data1 = loadStrings('cervantes.txt');
-  data2 = loadStrings('cohelo.txt');
+  data2 = loadStrings('kafka.txt');
 }
 
 function setup() {
@@ -15,7 +15,7 @@ function setup() {
   lines = ["click to (re)generate!"];
 
   // create a markov model w' n=4
-  markov = new RiMarkov(8);
+  markov = new RiMarkov(16);
 
   // load text into the model
   markov.loadText(data1.join(' '));
@@ -33,7 +33,7 @@ function drawText() {
 function mouseClicked() {
 
   x = y = 50;
-  lines = markov.generateSentences(10);
+  lines = markov.generateSentences(random(2, 10));
   drawText();
 }
 

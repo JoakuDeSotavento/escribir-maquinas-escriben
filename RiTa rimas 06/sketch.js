@@ -1,5 +1,4 @@
-source
- 
+
 var rhymes, word;
 
 function setup()
@@ -11,7 +10,7 @@ function setup()
   lexicon = new RiLexicon();
   findRhymes();
 
-  setInterval(findRhymes, 2000);
+  setInterval(findRhymes, 4000);
 }
 
 function draw()
