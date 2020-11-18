@@ -5,13 +5,14 @@ function setup(){
     createCanvas(windowWidth, windowHeight);
     
     rg = new RiGrammar();
-    rg.addRule("<start>", "El rinoceronte se mira en el espejo", 1);
-    //rg.addRule("<start>", "El <S> se <V> en <A> <N>", 1);
-    //rg.addRule("<S>", "Rinoceronte | Simio");
+    //rg.addRule("<start>", "El rinoceronte se mira en el espejo", 1);
+    rg.addRule("<start>", "El <S> se <V> <Pr> <A> <N>", 1);
+    rg.addRule("<S>", "Rinoceronte | Simio | Perro");
     //rg.addRule("<N>", "Simio", 1);
-    //rg.addRule("<V>", "mira | toca | susurra | lame | escuha");
-    //rg.addRule("<N>", "espejo | cuerpo | facebook | cocina | cueva");   
-    //rg.addRule("<A>", "el | la");
+    rg.addRule("<V>", "mira | toca | susurra | lame | escuha");
+    rg.addRule("<N>", "espejo | cuerpo | facebook | cocina | cueva");   
+    rg.addRule("<A>", "el | la");
+    rg.addRule("<Pr>", "en | dentro | fuera | arriba");
     for(let i = 0; i < 100; i++ ){
         let result = rg.expand(); 
         console.log(result);  
@@ -20,7 +21,7 @@ function setup(){
 }
 
 function draw(){
-    background(125);
+    background(250, 164, 5);
     drawText();
 }
 
@@ -37,9 +38,9 @@ function mousePressed(){
 
 function drawText(){
     push(); // aqui se dibuja el texto
-    stroke(125, 10, 125);
-    fill(125, 50, 125);
-    textSize(36);
+    //stroke(125, 10, 125);
+    fill(100, 100, 255, 125);
+    textSize(50);
     text(mensajeGen, mouseX, mouseY); 
     pop();
 }

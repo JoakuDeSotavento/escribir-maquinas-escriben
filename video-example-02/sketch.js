@@ -20,7 +20,7 @@ function draw() {
       const i = y * width + x;
       const darkness = (255 - fingers.pixels[i * 4]) / 255;
       const radius = stepSize * darkness;
-      ellipse(x, y, radius, radius);
+      rect(x, y, radius, radius);
     }
   }
 }

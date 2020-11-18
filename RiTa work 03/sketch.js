@@ -6,6 +6,7 @@ let lexicon;
 let mensajeGen;
 
 function setup(){
+    
     createCanvas(windowWidth, windowHeight);
     mensaje = "Expect poison from standing water"; // mensaje inicial
     rMess = new RiString(mensaje); // Objeto Rita string
@@ -45,6 +46,13 @@ function drawText(){
     fill(125, 50, 125);
     textSize(36);
     text(mensajeGen, mouseX, mouseY); 
+    pop();
+    
+    push(); // aqui se dibuja el texto
+    stroke(10, 10, 125);
+    fill(10, 50, 125);
+    textSize(16);
+    text(mensajeGen, mouseX + 100, mouseY + 100); 
     pop();
 }
 

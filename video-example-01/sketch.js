@@ -16,11 +16,9 @@ function draw() {
 }
 
 function mousePressed() {
-  fingers.play(); // configurar el video para empezar a reproducirse en bucle
-    
+  fingers.play(); // configurar el video para empezar a reproducirse en bucle 
 }
 
 function mouseReleased() {
-  fingers.stop(); // configurar el video para empezar a reproducirse en bucle
-    
+  fingers.stop(); // configurar el video para empezar a reproducirse en bucle   
 }
