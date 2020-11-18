@@ -22,9 +22,11 @@ function draw() {
 }
 
 function mouseClicked() {
+    
     x = mouseX;
     y = mouseY;
-  frases = textoMarkov.generateSentences(2);
+    frases = textoMarkov.generateSentences(2);
+    
 }
 
  
