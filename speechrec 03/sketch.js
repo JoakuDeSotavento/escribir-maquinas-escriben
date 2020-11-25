@@ -1,12 +1,13 @@
-		var myVoice = new p5.Speech('Google UK English Male', speechLoaded); // new P5.Speech object
+    // funcion clave ********************************
+    var myVoice = new p5.Speech('Google español de Estados Unidos', speechLoaded); // new P5.Speech object
 
 	//myVoice.onLoad = speechLoaded; // could do it this way
-	myVoice.onStart = speechStarted;
+	myVoice.onStart = speechStarted; // funcion clave ********************************
 	myVoice.onPause = speechPaused; // not working
 	myVoice.onResume = speechResumed; // not working
 	myVoice.onEnd = speechEnded;
 
-	var lyric = "now is the winter of our discontent.  made glorious summer by this sun of york.  and all the clouds that loured upon our house.  in the deep bosom of the ocean buried.";
+	var lyric = "He visto cosas que ustedes personas no podrian creer, naves espaciales en llamas junto al hombro de orion, Rayos C brillando en la oscuridad de la puerta de Tanhauser, pero todos esos recuerdos se perderan en el tiempo como lagrimas en la lluvia. Es la hora de morir";
 
 	var speakbutton; // UI
 
@@ -28,7 +29,7 @@
 
 	function buttonClicked()
 	{
-		if(speakbutton.elt.innerHTML=='Speak') myVoice.speak(lyric);
+		if(speakbutton.elt.innerHTML=='Speak') myVoice.speak(lyric); // funcion clave ********************************
 		else if(speakbutton.elt.innerHTML=='Pause') myVoice.pause(); // not working
 		else if(speakbutton.elt.innerHTML=='Resume') myVoice.resume(); // not working
 		else if(speakbutton.elt.innerHTML=='Stop') myVoice.stop();

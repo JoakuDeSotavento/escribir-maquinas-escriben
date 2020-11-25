@@ -46,10 +46,10 @@
 		if(mouseX<width && mouseY<height) {
 			ellipse(mouseX, mouseY, 50, 50); // circle
 			// randomize voice and speak word:
-            myVoice.setVoice("Google español");
-			//myVoice.setVoice(Math.floor(random(myVoice.voices.length)));
-			//myVoice.speak(words[iptr]);
-            myVoice.speak("En un lugar de la Mancha de cullo nombre no quiero acordarme");
+            //myVoice.setVoice("Google español");
+			myVoice.setVoice(Math.floor(random(myVoice.voices.length)));
+			myVoice.speak(words[iptr]);
+            //myVoice.speak("En un lugar de la Mancha de cullo nombre no quiero acordarme");
 			iptr = (iptr+1) % words.length; // increment
 		}
 	}

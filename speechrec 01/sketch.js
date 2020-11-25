@@ -1,4 +1,4 @@
-	var myRec = new p5.SpeechRec('en-US', parseResult); // new P5.SpeechRec object
+	var myRec = new p5.SpeechRec('es', parseResult); // new P5.SpeechRec object
 	myRec.continuous = true; // do continuous recognition
 	myRec.interimResults = true; // allow partial recognition (faster, less accurate)
 
@@ -19,7 +19,7 @@
 		// instructions:
 		textSize(20);
 		textAlign(LEFT);
-		text("draw: up, down, left, right, clear", 20, 20);
+		text("draw: arriba, abajo, izquierda, derecha, borra", 20, 20);
 
 		//myRec.onResult = parseResult; // now in the constructor
 		myRec.start(); // start engine
@@ -41,10 +41,10 @@
 		// recognition system will often append words into phrases.
 		// so hack here is to only use the last word:
 		var mostrecentword = myRec.resultString.split(' ').pop();
-		if(mostrecentword.indexOf("left")!==-1) { dx=-1;dy=0; }
-		else if(mostrecentword.indexOf("right")!==-1) { dx=1;dy=0; }
-		else if(mostrecentword.indexOf("up")!==-1) { dx=0;dy=-1; }
-		else if(mostrecentword.indexOf("down")!==-1) { dx=0;dy=1; }
-		else if(mostrecentword.indexOf("clear")!==-1) { background(255); }
+		if(mostrecentword.indexOf("izquierda")!==-1) { dx=-1;dy=0; }
+		else if(mostrecentword.indexOf("derecha")!==-1) { dx=1;dy=0; }
+		else if(mostrecentword.indexOf("arriba")!==-1) { dx=0;dy=-1; }
+		else if(mostrecentword.indexOf("abajo")!==-1) { dx=0;dy=1; }
+		else if(mostrecentword.indexOf("borra")!==-1) { background(255); }
 		console.log(mostrecentword);
 	}
