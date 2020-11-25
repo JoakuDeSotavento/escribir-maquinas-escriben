@@ -1,5 +1,7 @@
-let number = 0;
-let delta = 1;
+// Programa para el taller...
+
+let number = 0; // esta variable sirve para el grosor del al elipse
+let delta = 20;
 let mic;
 
 function setup() {

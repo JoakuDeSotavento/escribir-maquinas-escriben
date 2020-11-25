@@ -15,5 +15,5 @@ function draw() {
   }
 
   fill(number);
-  ellipse(mouseX, mouseY, number, number);
+  ellipse(100, 100, number, number);
 }
