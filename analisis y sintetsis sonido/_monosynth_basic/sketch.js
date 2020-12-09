@@ -9,6 +9,7 @@ var monoSynth;
 function setup() {
 
     createCanvas(400, 400);
+    
     text('press to play a random note at a random velocity', 20, 20);
 }
 

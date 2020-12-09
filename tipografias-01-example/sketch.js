@@ -21,7 +21,7 @@ let texto = "En un lugar de la Mancha, de cuyo nombre no quiero acordarme...";
 function setup() {
     createCanvas(1080, 720);
     
-    textFont("Roboto");
+    textFont("Castoro");
     stroke(255);
     strokeWeight(2);
 }

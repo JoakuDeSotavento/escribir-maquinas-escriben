@@ -41,10 +41,10 @@
 		// recognition system will often append words into phrases.
 		// so hack here is to only use the last word:
 		var mostrecentword = myRec.resultString.split(' ').pop();
-		if(mostrecentword.indexOf("izquierda")!==-1) { dx=-1;dy=0; }
-		else if(mostrecentword.indexOf("derecha")!==-1) { dx=1;dy=0; }
-		else if(mostrecentword.indexOf("arriba")!==-1) { dx=0;dy=-1; }
-		else if(mostrecentword.indexOf("abajo")!==-1) { dx=0;dy=1; }
-		else if(mostrecentword.indexOf("borra")!==-1) { background(255); }
+		if(mostrecentword.indexOf("gato")!==-1) { dx=-1;dy=0; }
+		else if(mostrecentword.indexOf("perro")!==-1) { dx=1;dy=0; }
+		else if(mostrecentword.indexOf("ave")!==-1) { dx=0;dy=-1; }
+		else if(mostrecentword.indexOf("sol")!==-1) { dx=0;dy=1; }
+		else if(mostrecentword.indexOf("niebla")!==-1) { background(255); }
 		console.log(mostrecentword);
 	}

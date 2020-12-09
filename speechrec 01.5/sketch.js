@@ -24,13 +24,15 @@ function draw()
     background(255, 10);
     push;
     // instructions:
-    textSize(20);
+    textSize(40);
     textAlign(LEFT);
-    text("Habla libremente, te escucho", 20, 20);
+    text("Habla libremente, te escucho", 20, 60);
     pop;
 
     push;
     textSize(32);
+    
+    //fill(255, 0, 0);
     //text(palabra, random(windowWidth), windowHeight/2);
     text(palabra, windowWidth/2, windowHeight/2);
     pop;
