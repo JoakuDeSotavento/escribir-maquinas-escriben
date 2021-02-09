@@ -4,7 +4,7 @@ let mensajeGen;
 function setup(){
     createCanvas(windowWidth, windowHeight);
     
-    rg = new RiGrammar();
+    rg = new RiTa.grammar();
     //rg.addRule("<start>", "El rinoceronte se mira en el espejo", 1);
     rg.addRule("<start>", "El <S> se <V> <Pr> <A> <N>", 1);
     rg.addRule("<S>", "Rinoceronte | Simio | Perro");
